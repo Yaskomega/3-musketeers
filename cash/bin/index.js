@@ -10,6 +10,10 @@ const argv = process.argv.slice(2);
 
 helpers(argv);
 
+/**
+ * 
+ * @type {{amount: T | * | number, from: T | * | number | ActiveX.IXMLDOMNode | Promise<any> | V, to: any}}
+ */
 const command = {
   'amount': argv[0] || 1,
   'from': argv[1] || config.get('defaultFrom', 'USD'),
